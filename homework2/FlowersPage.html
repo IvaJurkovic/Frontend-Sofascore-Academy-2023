@@ -23,7 +23,49 @@
       <span class="header-letters">About us</span>
       <span class="header-letters">Contact us</span>
       <button class="standard-white-letters">Send flowers!</button>
-      <i class="material-symbols-outlined gear-svg">Settings</i>
+      <div class="dropdown">
+        <label for="checkbox" class="material-symbols-outlined gear-svg">Settings</label>
+        <input type="checkbox" id="checkbox" class="checkbox">
+        <div id="dropdown-content" class="dropdown-content">
+          <div>
+            <div class="small-space">
+              <span class="menu-letters-subtext">Theme</span>
+            </div>
+            <div class="space-evenly">
+              <input id="light" type="radio" value="Light" name="theme" />
+              <label for="light" class="menu-options">Light</label>
+              <input id="dark" type="radio" value="Dark" name="theme"/>
+              <label for="dark" class="menu-options">Dark</label>
+              <input id="system" type="radio" value="System" name="theme"/>
+              <label for="system" class="menu-options">System</label>
+            </div>
+          </div>
+          <div>
+            <div class="small-space">
+              <span class="menu-letters-subtext">Language</span>
+            </div>
+            <select class="space-evenly">
+              <option>English</option>
+              <option>Croatian</option>
+              <option>German</option>
+              <option>Italian</option>
+            </select>
+          </div>
+          <div>
+            <div class="small-space">
+              <span class="menu-letters-subtext">Currency</span>
+            </div>
+            <select class="space-evenly">
+              <option>$ USD</option>
+              <option>€ EUR</option>
+              <option>£ GBP</option>
+            </select>
+          </div>
+          <div class="small-space">
+            <button class="standard-white-letters">Save settings</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="screen-no-header">
@@ -76,8 +118,7 @@
       <i class="material-symbols-outlined nav-icon">Info</i>
       <i class="material-symbols-outlined nav-icon">Mail</i>
       <i class="material-symbols-outlined nav-icon">filter_vintage</i>
-      <i class="material-symbols-outlined nav-icon">Menu</i>
-
+      <i class="material-symbols-outlined nav-icon">Settings</i>
     </div>
 </body>
 

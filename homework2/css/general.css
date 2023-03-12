@@ -8,6 +8,16 @@ html {
    height: 100%;
 }
 
+.small-space {
+   margin-top: 25px;
+   margin-left: 25px;
+}
+
+.space-evenly {
+   margin-left: 25px;
+   margin-top: 15px;
+}
+
 @media (min-width: 1280px) {
    .screen-no-header {
       height: calc(100% - 80px);

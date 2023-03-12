@@ -28,6 +28,17 @@ button {
    resize: none;
 }
 
+select {
+   border: 2px solid #847BBE;
+   font-family: "Montserrat";
+   border-radius: 4px;
+   box-sizing: border-box;
+   width: 250px;
+   font-size: 15px;
+   padding: 5px 20px;
+   text-align: left;
+}
+
 button:hover {
    transition: 0.3s;
    background: #AEA7DD;
@@ -45,6 +56,33 @@ button:hover {
       width: 600px;
       height: 145px;
       font-size: 21px;
+   }
+
+   .dropdown {
+      display: inline-block;
+      position: relative;
+   }
+   
+   input[type=checkbox]{
+      display: none;
+   }
+
+   input[type=checkbox]:checked~#dropdown-content{
+      display: block;
+   }
+
+   .dropdown-content {
+      margin-top: 40px;
+      outline-color: #847BBE;
+      outline-style: solid;
+      transform: translate(-340px);
+      border-radius: 3px;
+      display: none;
+      position:absolute;
+      width: 400px;
+      height: 385px;
+      background-color: white;
+      box-shadow: 0px 8px 16px 0px rgba(174, 167, 221, 0.9);
    }
 }
 
@@ -79,7 +117,6 @@ button:hover {
 .text-area-box::placeholder {
    color: #3D3D3D;
 }
-
 
 .input-box:focus, .input-box:active,
 .text-area-box:focus, .text-area-box:active
