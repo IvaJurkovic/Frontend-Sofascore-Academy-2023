@@ -73,6 +73,7 @@ button:hover {
       position:absolute;
       width: 400px;
       height: 385px;
+      background-color: white;
       box-shadow: 0px 8px 16px 0px rgba(174, 167, 221, 0.9);
    }
 }

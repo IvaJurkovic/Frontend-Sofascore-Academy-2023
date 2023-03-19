@@ -74,6 +74,16 @@
    cursor: default;
 }
 
+.logo-letters{
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 600;
+   margin-left: 10px;
+   align-content: center;
+   color: #847BBE;
+   cursor: pointer;
+}
+
 @media (min-width: 1280px) {
    .standard-letters {
       font-size: 21px;
@@ -103,15 +113,8 @@
       margin-right: 20px;
    }
 
-   .logo-letters{
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 600;
+   .logo-letters {
       font-size: 21px;
-      margin-left: 10px;
-      align-content: center;
-      color: #847BBE;
-      cursor: pointer;
    }
 }
 
@@ -133,6 +136,10 @@
       font-size: 15px;
       margin: 0 0 30px 0;
    }
+
+   .logo-letters {
+      font-size: 15px;
+   }
 }
 
 @media (min-width: 541px) and (max-width: 1279px) {
@@ -152,5 +159,9 @@
    .subtext-letters {
       font-size: 18px;
       margin: 0 0 30px 0;
+   }
+   
+   .logo-letters {
+      font-size: 21px;
    }
 }
