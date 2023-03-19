@@ -1,0 +1,24 @@
+.gear-svg {
+   color: #847BBE;
+   font-size: 40px !important;
+   margin-left: 20px;
+   margin-right: 20px;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+.gear-svg:hover {
+   color: #AEA7DD;
+   transition: 0.3s;
+}
+
+.nav-icon {
+   color: #847BBE;
+   font-size: 30px !important;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+.logo-svg {
+   margin-left: 25px;
+}

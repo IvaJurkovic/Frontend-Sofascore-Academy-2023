@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+
+.standard-letters {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 400;
+   color: #3D3D3D;
+   cursor: default;
+}
+
+.small-standard-letters {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 400;
+   color: #3D3D3D;
+   cursor: default;
+}
+
+.standard-white-letters {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 400;
+   color: white;
+   cursor: default;
+}
+
+.title-letters {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 500;
+   color: #3D3D3D;
+   cursor: default;
+}
+
+.subtext-letters {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 400;
+   color: #3D3D3D;
+   cursor: default;
+}
+
+.header-letters {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 500;
+   align-content: center;
+   color: #3D3D3D;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.header-letters:hover {
+   transition: 0.3s;
+   color: #847BBE;
+}
+
+.menu-letters-subtext {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-size: 21px;
+   font-weight: 500;
+   color: #3D3D3D;
+   cursor: default;
+}
+
+.menu-options {
+   font-family: "Montserrat";
+   font-style: normal;
+   font-size: 15px;
+   margin-right: 25px;
+   font-weight: 400;
+   color: #3D3D3D;
+   cursor: default;
+}
+
+.logo-letters{
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 600;
+   margin-left: 10px;
+   align-content: center;
+   color: #847BBE;
+   font-size: 21px;
+   cursor: pointer;
+}
+
+@media (min-width: 1280px) {
+   .standard-letters {
+      font-size: 21px;
+      margin-top: 30px;
+   }
+
+   .small-standard-letters {
+      font-size: 17px;
+   }
+
+   .standard-white-letters {
+      font-size: 18px;
+   }
+
+   .title-letters {
+      font-size: 40px;
+      margin: 0 0 15px 0;
+   }
+
+   .subtext-letters {
+      font-size: 25px;
+   }
+
+   .header-letters {
+      font-size: 18px;
+      margin-left: 20px;
+      margin-right: 20px;
+   }
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+   .standard-letters {
+      font-size: 16px;
+   }
+
+   .standard-white-letters {
+      font-size: 16px;
+   }
+
+   .title-letters {
+      font-size: 27px;
+      margin: 0 0 30px 0;
+   }
+
+   .subtext-letters {
+      font-size: 15px;
+      margin: 0 0 30px 0;
+   }
+}
+
+@media (min-width: 541px) and (max-width: 1279px) {
+   .standard-letters {
+      font-size: 17px;
+   }
+
+   .standard-white-letters {
+      font-size: 17px;
+   }
+
+   .title-letters {
+      font-size: 30px;
+      margin: 0 0 30px 0;
+   }
+
+   .subtext-letters {
+      font-size: 18px;
+      margin: 0 0 30px 0;
+   }
+}

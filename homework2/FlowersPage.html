@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ForgetMeNot</title>
+  <link rel="stylesheet" type="text/css" href="css/general.css" />
+  <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+  <link rel="stylesheet" type="text/css" href="css/typography.css" />
+  <link rel="stylesheet" type="text/css" href="css/components.css" />
+  <link rel="stylesheet" type="text/css" href="css/svg.css" />
+  <link rel="stylesheet" type="text/css" href="css/animation.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="header">
+    <div class="center-align logo-svg">
+      <object data="svg/ForgetMeNot.svg"></object>
+      <span class="logo-letters">ForgetMeNot</span>
+    </div>
+    <div class="center-align">
+      <span class="header-letters">Home page</span>
+      <span class="header-letters">About us</span>
+      <span class="header-letters">Contact us</span>
+      <button class="standard-white-letters">Send flowers!</button>
+      <div class="dropdown">
+        <label for="checkbox" class="material-symbols-outlined gear-svg">Settings</label>
+        <input type="checkbox" id="checkbox" class="checkbox">
+        <div class="dropdown-content">
+          <div>
+            <div class="small-space">
+              <span class="menu-letters-subtext">Theme</span>
+            </div>
+            <div class="space-evenly">
+              <input id="light" type="radio" value="Light" name="theme" />
+              <label for="light" class="menu-options">Light</label>
+              <input id="dark" type="radio" value="Dark" name="theme"/>
+              <label for="dark" class="menu-options">Dark</label>
+              <input id="system" type="radio" value="System" name="theme"/>
+              <label for="system" class="menu-options">System</label>
+            </div>
+          </div>
+          <div>
+            <div class="small-space">
+              <span class="menu-letters-subtext">Language</span>
+            </div>
+            <select class="space-evenly">
+              <option>English</option>
+              <option>Croatian</option>
+              <option>German</option>
+              <option>Italian</option>
+            </select>
+          </div>
+          <div>
+            <div class="small-space">
+              <span class="menu-letters-subtext">Currency</span>
+            </div>
+            <select class="space-evenly">
+              <option>$ USD</option>
+              <option>€ EUR</option>
+              <option>£ GBP</option>
+            </select>
+          </div>
+          <div class="small-space">
+            <button class="standard-white-letters">Save settings</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="align small-space logo-svg">
+    <object data="svg/ForgetMeNot.svg"></object>
+    <span class="logo-letters">ForgetMeNot</span>
+  </div>
+  <div class="screen-no-header">
+    <div class="split-screen center-align-elements">
+      <div class="half-screen">
+        <div class="title-screen">
+          <div class="title-letters center-align-elements">Surprise your loved ones!</div>
+          <div class="subtext-letters">
+            <div class="center-align-elements">
+              Enter your credentials to confirm your order
+            </div>
+            <div class="center-align-elements">
+              and write a message for that special someone.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="half-screen">
+        <div class="title-screen"></div>
+      </div>
+    </div>
+    <form>
+      <div class="split-screen">
+        <div class="half-screen center-align-elements">
+          <div>
+            <label class="standard-letters"> E-mail: </label>
+            <br />
+            <input type="email" id="email" class="input-box" />
+            <br />
+            <label class="standard-letters"> Password: </label>
+            <br />
+            <input type="password" id="password" class="input-box" />
+          </div>
+        </div>
+        <div class="half-screen center-align-elements">
+          <div class="space">
+            <label class="standard-letters"> Message: </label>
+            <br />
+            <textarea id="message" type="text" class="text-area-box"
+              placeholder="Write your message here..."></textarea>
+            <div class="right-align center-align-elements">
+              <button class="standard-white-letters">Send!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="bottom-navigation">
+      <i class="material-symbols-outlined nav-icon">Home</i>
+      <i class="material-symbols-outlined nav-icon">Info</i>
+      <i class="material-symbols-outlined nav-icon">Mail</i>
+      <i class="material-symbols-outlined nav-icon">filter_vintage</i>
+      <div class="dropdown">
+        <label for="checkbox2" class="material-symbols-outlined nav-icon">Settings</label>
+        <input type="checkbox" id="checkbox2" class="checkbox">
+        <div class="dropdown-content">
+          <div class="center-align-elements">
+            <div>
+              <div class="small-space">
+                <span class="menu-letters-subtext">Theme</span>
+              </div>
+              <div class="space-evenly">
+                <input id="light" type="radio" value="Light" name="theme" />
+                <label for="light" class="menu-options">Light</label>
+                <input id="dark" type="radio" value="Dark" name="theme"/>
+                <label for="dark" class="menu-options">Dark</label>
+                <input id="system" type="radio" value="System" name="theme"/>
+                <label for="system" class="menu-options">System</label>
+              </div>
+            </div>
+            <div>
+              <div class="small-space">
+                <span class="menu-letters-subtext">Language</span>
+              </div>
+              <select class="space-evenly">
+                <option>English</option>
+                <option>Croatian</option>
+                <option>German</option>
+                <option>Italian</option>
+              </select>
+            </div>
+            <div>
+              <div class="small-space">
+                <span class="menu-letters-subtext">Currency</span>
+              </div>
+              <select class="space-evenly">
+                <option>$ USD</option>
+                <option>€ EUR</option>
+                <option>£ GBP</option>
+              </select>
+            </div>
+            <div class="small-space">
+              <button class="standard-white-letters">Save settings</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

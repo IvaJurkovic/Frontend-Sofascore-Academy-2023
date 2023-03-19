@@ -1,0 +1,8 @@
+The idea for the page and what this one represents:
+
+On this website you can order flowers for your loved ones.
+To do that you have to make an account and then you have to place an order by clicking the "Send flowers" button on the desktop version or clicking the flower button in the mobile version.
+
+The page that I made is the final step before the company starts packing the flowers. So you have to confirm that it's you (you have to enter your email and password as you would when logging in) and then you have the option to write a message. That message would be printed out as a little note which would be attached to the bouqet (like a little "Get well soon" card).
+
+And yeah that's about it.
