@@ -40,51 +40,55 @@
       <div class="button-border-grey"></div>
    </div>
    <template id="card-template">
-      <div class="card" id="card">
-         <div class="data-container card-face" id="data-container-front">
-            <div class="headline-black-letters align-headline">
-               <div>
-                  <span id="pokedex-number">
-                     <!-- [Number]: -->
-                  </span>
-                  <span id="pokedex-name">
-                     <!-- [Name] -->
-                  </span>
+      <div class="card-container">
+         <div class="card" id="card">
+               <div class="card-face-front" id="data-container-front">
+                  <div class="headline-black-letters align-headline">
+                     <div>
+                        <span id="pokedex-number">
+                           <!-- [Number]: -->
+                        </span>
+                        <span id="pokedex-name">
+                           <!-- [Name] -->
+                        </span>
+                     </div>
+                     <span class="material-symbols-outlined option" id="hide-element" onclick="">
+                        Hide_Source
+                     </span>
+                  </div>
+                  <div class="image-container">
+                     <img class="image-style" id="image-holder-front" />
+                  </div>
+                  <div class="standard-black-letters align-details">
+                     <div id="pokedex-type">
+                        <!-- [Type: type1 | type2] -->
+                     </div>
+                     <div id="pokedex-weight">
+                        <!-- Weight: [weight] kg -->
+                     </div>
+                     <div id="pokedex-height">
+                        <!-- Height: [height] cm -->
+                     </div>
+                     <div id="pokedex-hp">
+                        <!-- Health Points: [HP] -->
+                     </div>
+                  </div>
                </div>
-               <span class="material-symbols-outlined option" id="hide-element" onclick="">
-                  Hide_Source
-               </span>
-            </div>
-            <div class="image-container">
-               <img id="image-holder-front" class="image-style" />
-            </div>
-            <div class="standard-black-letters align-details">
-               <div id="pokedex-type">
-                  <!-- [Type: type1 | type2] -->
+               <div class="card-face-back" id="data-container-back">
+                  <div class="headline-space">
+                  </div>
+                  <div class="image-container">
+                     <img class="image-style" id="image-holder-back" />
+                  </div>
+                  <div class="standard-black-letters align-details">
+                     <div id="pokedex-description">
+                        <!-- Description: [description] -->
+                     </div>
+                     <div id="pokedex-evolution">
+                        <!-- Evolution: [evolution] -->
+                     </div>
+                  </div>
                </div>
-               <div id="pokedex-weight">
-                  <!-- Weight: [weight] kg -->
-               </div>
-               <div id="pokedex-height">
-                  <!-- Height: [height] cm -->
-               </div>
-               <div id="pokedex-hp">
-                  <!-- Health Points: [HP] -->
-               </div>
-            </div>
-         </div>
-         <div class="data-container card-face card-back" id="data-container-back">
-            <div class="image-container">
-               <img class="image-style" id="image-holder-back" />
-            </div>
-            <div class="standard-black-letters align-details">
-               <div id="pokedex-description">
-                  <!-- Description: [description] -->
-               </div>
-               <div id="pokedex-evolution">
-                  <!-- Evolution: [evolution] -->
-               </div>
-            </div>
          </div>
       </div>
    </template>

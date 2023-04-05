@@ -135,7 +135,7 @@ async function getPokemon(currentPage, pokemonPerPage) {
                   const detailsJSON = await responseDetails.json();
 
                   console.log(detailsJSON)
-                  details.textContent = "Details: " + detailsJSON.flavor_text_entries[0].flavor_text
+                  details.textContent = "Details: " + detailsJSON.flavor_text_entries[0].flavor_text.replace("\f", " ")
                 }
               } catch (error) {
                 console.error("Error: " + error)
