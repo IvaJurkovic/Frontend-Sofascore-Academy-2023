@@ -1,5 +1,6 @@
 .card-container {
    background-color: transparent;
+   display: flex;
    width: calc(15% - 1.5vh);
    height: calc(85%);
 }
@@ -74,7 +75,11 @@
 }
 
 @media (min-width: 540px) and (max-width: 1280px) {
-   .card {
+   .card-container {
       width: 40%;
+   }
+
+   .card {
+      width: 100%;
    }
 }
