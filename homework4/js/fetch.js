@@ -65,7 +65,6 @@ async function getPokemon(currentPage, pokemonPerPage) {
             hideElement();
           }
 
-          if(localStorage.length)
 
           hide.addEventListener("click", hideElement, true);
 
