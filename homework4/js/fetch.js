@@ -1,7 +1,7 @@
 //starting params
 const baseURL = "https://pokeapi.co/api/v2/pokemon";
-var totalPokemonCount = 0;
-var offset = 0;
+let totalPokemonCount = 0;
+let offset = 0;
 
 //fetching pokemon based on the width of the screen
 async function getPokemon(currentPage, pokemonPerPage) {
@@ -65,11 +65,9 @@ async function getPokemon(currentPage, pokemonPerPage) {
             hideElement();
           }
 
-          if(localStorage.length)
-
           hide.addEventListener("click", hideElement, true);
 
-          if (localStorage.getItem(offset + i) === null) {
+          if (localStorage.getItem(offset + i) === null && !card.classList.contains("hide")) {
             card.addEventListener("click", flipCard, false);
           }
 
@@ -77,9 +75,12 @@ async function getPokemon(currentPage, pokemonPerPage) {
             card.classList.toggle("flipped");
           }
 
-          function hideElement() {
+          function hideElement(event) {
             card.classList.toggle("hide");
             localStorage.setItem(offset + i, decodedData.results[i].name);
+            if (event) {
+                event.stopPropagation();
+            }
           }
 
           no.textContent = "#000" + (offset + i + 1) + ":";
@@ -134,8 +135,13 @@ async function getPokemon(currentPage, pokemonPerPage) {
                 if(responseDetails.status === 200) {
                   const detailsJSON = await responseDetails.json();
 
-                  console.log(detailsJSON)
-                  details.textContent = "Details: " + detailsJSON.flavor_text_entries[0].flavor_text.replace("\f", " ")
+                  console.log(detailsJSON.flavor_text_entries[0].language.name)
+                  for(let k = 0; k < detailsJSON.flavor_text_entries.length; k++) {
+                    if(detailsJSON.flavor_text_entries[k].language.name === "en") {
+                      details.textContent = "Details: " + detailsJSON.flavor_text_entries[k].flavor_text.replace("\f", " ")
+                      break;
+                    }
+                  }
                 }
               } catch (error) {
                 console.error("Error: " + error)
