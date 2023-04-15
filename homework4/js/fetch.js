@@ -76,9 +76,12 @@ async function getPokemon(currentPage, pokemonPerPage) {
             card.classList.toggle("flipped");
           }
 
-          function hideElement() {
+          function hideElement(event) {
             card.classList.toggle("hide");
             localStorage.setItem(offset + i, decodedData.results[i].name);
+            if (event) {
+                event.stopPropagation();
+            }
           }
 
           no.textContent = "#000" + (offset + i + 1) + ":";
