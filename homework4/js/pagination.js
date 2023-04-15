@@ -1,6 +1,6 @@
 //starting params
-var elementsPerPage = 0;
-var currentPage = 1;
+let elementsPerPage = 0;
+let currentPage = 1;
 const pageDisplay = document.getElementById("page-display");
 
 //checking the window dimensions so that we can update
