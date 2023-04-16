@@ -65,6 +65,7 @@ async function getPokemon(currentPage, pokemonPerPage) {
             hideElement();
           }
 
+
           hide.addEventListener("click", hideElement, true);
 
           if (localStorage.getItem(offset + i) === null && !card.classList.contains("hide")) {
