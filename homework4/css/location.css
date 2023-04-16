@@ -1,0 +1,21 @@
+.corner-position-bottom {
+   display: flex;
+   width: calc(100% - 100px);
+   justify-content: space-between;
+   position: absolute;
+   top: calc(100% - 125px);
+}
+
+.up {
+   margin-top: -1.5%;
+}
+
+.headline-space {
+   height: 10%;
+}
+
+@media (min-width: 540px) and (max-width: 1280px) {
+   .up {
+      margin-top: -5%;
+   }
+}
