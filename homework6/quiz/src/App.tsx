@@ -1,8 +1,7 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import Home from './home';
-import Questions from './questions';
-import WinningScreen from './winningScreen';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./home";
+import Questions from "./questions";
+import WinningScreen from "./winningScreen";
 
 function App() {
   return (

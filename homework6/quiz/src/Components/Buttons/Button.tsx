@@ -25,8 +25,18 @@ export const HomeButton = styled(StyledButton)`
   background-color: rgba(255, 255, 255, 0.3);
   color: #ffffff;
   &:hover {
-    background-color: white;
     background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+  }
+`;
+
+export const WinButton = styled(StyledButton)`
+  font-size: 1.5em;
+  margin: 10px 0 0 0;
+  background-color: rgba(66, 66, 66, 0.3);
+  color: #ffffff;
+  &:hover {
+    background-color: rgba(51, 51, 51, 0.5);
     transition: 0.3s;
   }
 `;

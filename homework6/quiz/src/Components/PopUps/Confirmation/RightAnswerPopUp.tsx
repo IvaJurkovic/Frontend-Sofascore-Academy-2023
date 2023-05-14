@@ -1,25 +1,24 @@
-import { Button } from "../Buttons/Button";
+import { Button } from "../../Buttons/Button";
 import { Link } from "react-router-dom";
-import { PopUpBackground } from "./Components/PopUpBackground";
-import { PopUpContainer } from "./Components/PopUpContainer";
+import { PopUpBackground } from "../Components/PopUpBackground";
+import { PopUpContainer } from "../Components/PopUpContainer";
+import { useContext } from "react";
+import AppContext from "../../../Context/context";
 
-function RightAnswerPopUp() {
-  let questionNumberStr = localStorage.getItem("questionNumber");
-  let questionNumber = Number(questionNumberStr);
-  questionNumber++;
+function RightAnswerPopUp(props: { closePopup: any }) {
+  const { questionNumber, setProperty } = useContext(AppContext);
 
   const handleRightAnswer = () => {
-    if (questionNumber === 4) {
-      localStorage.setItem("questionNumber", "1");
+    if (questionNumber === 15) {
       window.location.href = "/congratulations";
     } else {
-      localStorage.setItem("questionNumber", questionNumber.toString());
-      window.location.href = "/questions";
+      setProperty("QN", questionNumber + 1);
+      props.closePopup(false);
     }
   };
 
-  const resetLocalStorage = () => {
-    localStorage.setItem("questionNumber", "1");
+  const resetContext = () => {
+    setProperty("QN", 1);
   };
 
   return (
@@ -38,9 +37,16 @@ function RightAnswerPopUp() {
           <div style={{ fontFamily: "Raleway", marginBottom: "8px" }}>
             or go back to the home page:
           </div>
-          <div style={{display: 'flex', width: '100%', flexDirection:'row', justifyContent: 'space-evenly'}}>
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+            }}
+          >
             <Link to="/">
-              <Button onClick={resetLocalStorage}>QUIT</Button>
+              <Button onClick={resetContext}>QUIT</Button>
             </Link>
             <Button onClick={handleRightAnswer}>NEXT</Button>
           </div>

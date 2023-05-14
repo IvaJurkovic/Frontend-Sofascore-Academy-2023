@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { HomeButton } from "./Components/Buttons/Button";
 import { styled, keyframes } from "styled-components";
@@ -15,7 +14,7 @@ const AnimateBG = keyframes`
   100% {
     background-position: 0% 50%;
   }
-`
+`;
 
 const Background = styled.div`
   width: 100%;
@@ -35,7 +34,6 @@ const Background = styled.div`
   animation-duration: 10s;
   animation-iteration-count: infinite;
 `;
-
 
 function Home() {
   return (

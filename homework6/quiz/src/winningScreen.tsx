@@ -1,6 +1,8 @@
 import { keyframes, styled } from "styled-components";
 import { CongratsLetters } from "./Components/Typography/PunchlineLetters";
 import { CongratsTitleLetters } from "./Components/Typography/TitleLetters";
+import { WinButton } from "./Components/Buttons/Button";
+import { Link } from "react-router-dom";
 
 const FallingConfetti = keyframes`
   from {
@@ -27,24 +29,24 @@ const Confetti = styled.div`
 const ChildConfetti = styled.div<{
   left: number;
   transform: number;
-  animationDelay: number;
-  animationDuration: number;
+  animationdelay: number;
+  animationduration: number;
 }>`
   position: absolute;
   width: 16px;
   height: 32px;
-  background: #ffd300;
+  background: #ffca3a;
   top: 0;
   opacity: 0;
 
   left: ${(props) => props.left}%;
   animation: ${FallingConfetti} 4s infinite ease-out;
   transform: rotate(${(props) => props.transform}deg);
-  animation-delay: ${(props) => props.animationDelay}ms;
-  animation-duration: ${(props) => props.animationDuration}ms;
+  animation-delay: ${(props) => props.animationdelay}ms;
+  animation-duration: ${(props) => props.animationduration}ms;
 
   &:nth-child(odd) {
-    background: #17d3ff;
+    background: #1982c4;
   }
   &:nth-child(even) {
     z-index: 1;
@@ -61,7 +63,7 @@ const ChildConfetti = styled.div<{
     animation-delay: 2s;
   }
   &:nth-child(4n-7) {
-    background: #ff4e91;
+    background: #8ac926;
   }
 `;
 
@@ -77,10 +79,11 @@ function WinningScreen() {
         for (let i = 0; i < 16; i++) {
           arr.push(
             <ChildConfetti
+              key={i}
               left={i * 7}
               transform={randomNumber(-80, 80)}
-              animationDelay={randomNumber(0, 1000)}
-              animationDuration={randomNumber(1000 * 1.2, 1000 * 2.4)}
+              animationdelay={randomNumber(0, 1000)}
+              animationduration={randomNumber(1000 * 1.2, 1000 * 2.4)}
             />
           );
         }
@@ -88,12 +91,13 @@ function WinningScreen() {
       })()}
       <div className="center">
         <CongratsTitleLetters>YOU WON!</CongratsTitleLetters>
-        <CongratsLetters>
-          You are a true quiz wiz after all...
-        </CongratsLetters>
+        <CongratsLetters>You are a true quiz wiz after all...</CongratsLetters>
         <CongratsLetters style={{ fontSize: "20px" }}>
           Kudos to you my dear sir/lady!
         </CongratsLetters>
+        <Link to="/">
+          <WinButton>WATCH ME DO IT AGAIN</WinButton>
+        </Link>
       </div>
     </Confetti>
   );
